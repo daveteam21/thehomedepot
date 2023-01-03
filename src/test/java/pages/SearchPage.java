@@ -46,14 +46,30 @@ public class SearchPage {
 	
 	@FindBy (xpath = "//*[@id=\"root\"]/div/div[3]/div/div[5]/div[1]/div/button")
 	public WebElement freedeliverymessage;
+	
+	@FindBy (xpath ="//*[@id=\"browse-search-dimensions\"]/div/div[1]/div/div[2]/div/div[4]/div")
+	public WebElement clicknextdaybox;
+	
+	@FindBy (xpath ="//*[@id=\"root\"]/div/div[3]/div/div[5]/div[1]/div/button/span")
+	public WebElement nextdaydeliverymessage;
+	
+	@FindBy (xpath = "//*[@id=\"searchHistory\"]/div/div[1]")
+	public WebElement yourrecentsearchmessage;
+	
+	@FindBy (xpath = "//*[@id=\"media-gallery\"]/div/div/div[1]/div[3]/button")
+	public WebElement mediagallery;
+	
+	@FindBy (xpath = "//*[@id=\"thd-brightcove-iframe-4687710888001_1672679805099\"]")
+	public WebElement iframe;
+	
+	@FindBy (xpath ="//*[@id=\"vjs_video_3\"]")
+	public WebElement playmedia;
+	
 	@FindBy (xpath = "//*[@id=\"root\"]/div/div[3]/div/div/div[3]/div/div/div[10]/div/div/div[4]/div/div/div[2]/div[1]/div/div/button")
 	public WebElement addtocartbtn;
 	
 	@FindBy(xpath = "/html//div[@id='root']")
-	public WebElement iframe;
-
-	@FindBy(id = "tmx_tags_iframe")
-	public WebElement clickveiwcartbtn;
+		public WebElement clickveiwcartbtn;
 	
 	public SearchPage() {
 		driver = BrowserHelper.driver;
