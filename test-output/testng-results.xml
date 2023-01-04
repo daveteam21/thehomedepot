@@ -1,60 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-01T17:08:17 EST" name="Default suite" finished-at="2023-01-01T17:09:08 EST" duration-ms="51105">
+  <suite started-at="2023-01-04T00:08:02 EST" name="Default suite" finished-at="2023-01-04T00:09:17 EST" duration-ms="74795">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@7161d8d1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@74d1dc36]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-01-01T17:08:17 EST" name="Default test" finished-at="2023-01-01T17:09:08 EST" duration-ms="51105">
+    <test started-at="2023-01-04T00:08:02 EST" name="Default test" finished-at="2023-01-04T00:09:17 EST" duration-ms="74795">
       <class name="runners.CucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CucumberRunner@7161d8d1]" started-at="2023-01-01T17:08:17 EST" name="setUpClass" finished-at="2023-01-01T17:08:46 EST" duration-ms="28407" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CucumberRunner@74d1dc36]" started-at="2023-01-04T00:08:02 EST" name="setUpClass" finished-at="2023-01-04T00:08:30 EST" duration-ms="28060" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6587305a]]>
+                <![CDATA[org.testng.TestRunner@d08edc5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@7161d8d1]" started-at="2023-01-01T17:08:46 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-01T17:09:08 EST" duration-ms="22612" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CucumberRunner@74d1dc36]" started-at="2023-01-04T00:08:30 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-04T00:09:16 EST" duration-ms="46358" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User able to get item fast"]]>
+                <![CDATA["User able to click Home Depot Logo"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["HomeDepot Search Get It Fast Free 2 days delivery Functionality"]]>
+                <![CDATA["Home Depot Logo Functionality"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [] but found [Get It Fast: Free 2-Day Delivery]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [] but found [Get It Fast: Free 2-Day Delivery]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at stepdefination.Free2DaysDeliveryDefination.item_list_should_have_only_for_free_delivery(Free2DaysDeliveryDefination.java:25)
-at ✽.Item list should have only for free delivery(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/Free2DaysDelivery.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CucumberRunner@7161d8d1]" started-at="2023-01-01T17:09:08 EST" name="tearDownClass" finished-at="2023-01-01T17:09:08 EST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CucumberRunner@74d1dc36]" started-at="2023-01-04T00:09:16 EST" name="tearDownClass" finished-at="2023-01-04T00:09:17 EST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

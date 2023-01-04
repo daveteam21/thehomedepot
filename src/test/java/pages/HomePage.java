@@ -14,6 +14,34 @@ public class HomePage {
 	public WebElement myAccount;
 	@FindBy(xpath = "//*[@id=\"SPSOSignIn\"]/a/span")
 	public WebElement signinButton;
+	
+	@FindBy(xpath = "//*[@id=\"header\"]/div[1]/div[4]/div/ul/li[7]/a")
+	public WebElement localAdlink;
+	
+	@FindBy(css ="iframe[title='Navigation Bar']")
+	public WebElement iframe;
+	
+	@FindBy(css ="flipp-filmstrip-pub:nth-of-type(2) > button[role='tab'] > .flipp-filmstrip-pub-details")
+	public WebElement weeklyAdlink;
+	
+	@FindBy(css ="li:nth-of-type(2) > flipp-publication  .flipp-publication-image")
+	public WebElement weeklytitle;
+	
+	@FindBy(id = "zoomInButton")
+	public WebElement zoominbtn;
+	
+	@FindBy(id = "zoomLevels")
+	public WebElement zoomlvls;
+	
+	@FindBy(id = "zoomOutButton")
+	public WebElement zoomoutbtn;
+	
+	@FindBy(css = ".HeaderLogo")
+	public WebElement logo;
+	
+	@FindBy(css ="a[title='The Home Depot']  title")
+	public WebElement hdtitle;
+	
 
 
 	public HomePage() {
