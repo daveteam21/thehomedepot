@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 04 00:08:02 EST 2023</td>
+<td>Started on:</td><td>Wed Jan 04 15:51:58 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>74 seconds (74795 ms)</td>
+<tr><td>Total time:</td><td>403 seconds (403770 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,39 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to get item fast", "Feature: HomeDepot Search Get It Fast Next days delivery Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [[Get It Fast: Next-Day Delivery] but found [Get It Fast: Same-Day Delivery]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepdefination.NextDayDeliveryDefinations.item_list_should_have_only_delivery_scheduled(NextDayDeliveryDefinations.java:26)
+	at ✽.Item list should have only delivery scheduled(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/NextDayDelivery.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1744423762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1744423762'><pre>java.lang.AssertionError: expected [[Get It Fast: Next-Day Delivery] but found [Get It Fast: Same-Day Delivery]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepdefination.NextDayDeliveryDefinations.item_list_should_have_only_delivery_scheduled(NextDayDeliveryDefinations.java:26)
+	at ✽.Item list should have only delivery scheduled(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/NextDayDelivery.feature:7)
+</pre></div></td>
+<td>22</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +109,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to click and see recent search", "HomeDepot Recent Search Functionality"</td>
+<td></td>
+<td>59</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with NJ Zipcode", "Home Depot NJ Zipcode Store Locator"</td>
+<td></td>
+<td>14</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
 <td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to click Home Depot Logo", "Home Depot Logo Functionality"</td>
 <td></td>
-<td>46</td>
-<td>runners.CucumberRunner@74d1dc36</td></tr>
+<td>13</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will see an input error message when login with invalid email", "SignIn Invalid Email"</td>
+<td></td>
+<td>22</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to search item", "HomeDepot Search Sink Functionality"</td>
+<td></td>
+<td>34</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with NY Zipcode", "Home Depot NY Zipcode Store Locator"</td>
+<td></td>
+<td>9</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to search item", "HomeDepot Search SnowBlower Functionality"</td>
+<td></td>
+<td>25</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to get item fast", "HomeDepot Search Get It Fast Free 2 days delivery Functionality"</td>
+<td></td>
+<td>24</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to get item fast", "HomeDepot Search For Store Pick Up Functionality"</td>
+<td></td>
+<td>45</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with Canada Zipcode", "Home Depot Canada Zipcode Store Locator"</td>
+<td></td>
+<td>25</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User search for Heaters", "HomeDepot Search Heaters Functionality"</td>
+<td></td>
+<td>39</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User click zoom out to make the page bigger", "Home Depot Local Ads & Catalog Zoom Out Functionality"</td>
+<td></td>
+<td>17</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User click zoom in to make the page bigger", "Home Depot Local Ads & Catalog Zoom In Functionality"</td>
+<td></td>
+<td>12</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to look for deals in the weekly ad.", "Home Depot Local Ad & Catalog Functionality"</td>
+<td></td>
+<td>19</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
 </table><p>
 </body>
 </html>

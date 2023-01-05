@@ -10,8 +10,9 @@ public class HomeDepotLogoDefinations {
 	
 
 	@When("Click Home Depot Logo")
-	public void click_home_depot_logo() {
+	public void click_home_depot_logo() throws InterruptedException {
 	   HomePage homepage = new HomePage();
+	   Thread.sleep(1000);
 	   homepage.logo.click();
 	}
 	@Then("The page will refresh to home page.")

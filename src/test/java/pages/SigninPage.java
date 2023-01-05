@@ -10,18 +10,21 @@ public class SigninPage {
 
 	WebDriver driver;
 
+
 	@FindBy(id = "username")
 	public WebElement usernamefield;
 	
 	@FindBy(css = "form  .bttn__content")
 	public WebElement selectcontinuebtn;
 	
+	@FindBy(css =".error-enter-done.form-input-error__message.u__block")
+	public WebElement inputErrorMessage;
+	
 	@FindBy(xpath = "//*[@id=\"EZDrawer__container\"]/div/div[4]/button")
 	public WebElement nothanks;
 	
 	@FindBy(id = "password-input-field")
 	public WebElement passwordfield;
-
 	
 
 	public SigninPage() {

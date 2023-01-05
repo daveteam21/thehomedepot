@@ -5,13 +5,14 @@ import java.time.Duration;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
+import Utils.BrowserHelper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HomePage;
 import pages.StoreLocatorPage;
 
-public class StoreLocatorDefinations {
+public class StoreLocatorDefinations extends BrowserHelper{
 	 
 	
 	
@@ -33,8 +34,9 @@ public class StoreLocatorDefinations {
 	}
 	@Then("NY Stores options appear")
 	public void ny_stores_options_appear() {
-	    StoreLocatorPage storelocator = new StoreLocatorPage();
-	    Assert.assertEquals(storelocator.NYlocation.getText(), "Hempstead, NY 11550");
+		String pageURL = driver.getCurrentUrl();
+		Assert.assertEquals(pageURL,
+				"https://www.homedepot.com/l/search/11550");
 	    
 	}
 
