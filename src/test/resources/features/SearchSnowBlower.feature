@@ -1,4 +1,5 @@
 Feature: HomeDepot Search SnowBlower Functionality
+@regression
 Scenario: User able to search item
 Given Open Home Depot Homepage
 When search for SnowBlower

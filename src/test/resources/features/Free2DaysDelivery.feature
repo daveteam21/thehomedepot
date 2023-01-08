@@ -1,4 +1,5 @@
 Feature: HomeDepot Search Get It Fast Free 2 days delivery Functionality
+@regression
 Scenario: User able to get item fast
 Given Open Home Depot Homepage
 When search for snow blower

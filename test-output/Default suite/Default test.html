@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 04 15:51:58 EST 2023</td>
+<td>Started on:</td><td>Sat Jan 07 19:34:47 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>403 seconds (403770 ms)</td>
+<tr><td>Total time:</td><td>542 seconds (542597 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +76,72 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to visit the DIY Projects & Ideas page", "kitchen is clickable in the DIY Wood Projects"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-id=&quot;diyProjectsIdeas&quot; class=&quot;ShoppingLinks__link&quot; href=&quot;//www.homedepot.com/c/diy_projects_and_ideas&quot;&gt;...&lt;/a&gt; is not clickable at point (523, 115). Other element would receive the click: &lt;div class=&quot;overlay-close-button overlay-close-button--right&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.125)
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0beac781ecefb192ad282019ac8064a, clickElement {id=95e7dfe8-87d0-48d3-bdf2-43445eb40707}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\davet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e0beac781ecefb192ad282019ac8064a)] -&gt; xpath: /html//div[@id=&apos;header&apos;]//ul[@class=&apos;ShoppingLinks&apos;]//a[@href=&apos;//www.homedepot.com/c/diy_projects_and_ideas&apos;]]
+Session ID: e0beac781ecefb192ad282019ac8064a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at stepdefination.WoodProjectsKitchenCheckboxDefinations.diy_projects_ideas_page_is_open(WoodProjectsKitchenCheckboxDefinations.java:18)
+	at ✽.DIY Projects &amp; Ideas page is open(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/WoodProjectsKitchenCheckbox.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace772462345", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace772462345'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-id=&quot;diyProjectsIdeas&quot; class=&quot;ShoppingLinks__link&quot; href=&quot;//www.homedepot.com/c/diy_projects_and_ideas&quot;&gt;...&lt;/a&gt; is not clickable at point (523, 115). Other element would receive the click: &lt;div class=&quot;overlay-close-button overlay-close-button--right&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.125)
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0beac781ecefb192ad282019ac8064a, clickElement {id=95e7dfe8-87d0-48d3-bdf2-43445eb40707}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\davet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e0beac781ecefb192ad282019ac8064a)] -&gt; xpath: /html//div[@id=&apos;header&apos;]//ul[@class=&apos;ShoppingLinks&apos;]//a[@href=&apos;//www.homedepot.com/c/diy_projects_and_ideas&apos;]]
+Session ID: e0beac781ecefb192ad282019ac8064a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at stepdefination.WoodProjectsKitchenCheckboxDefinations.diy_projects_ideas_page_is_open(WoodProjectsKitchenCheckboxDefinations.java:18)
+	at ✽.DIY Projects &amp; Ideas page is open(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/WoodProjectsKitchenCheckbox.feature:4)
+</pre></div></td>
+<td>2</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
 <td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to get item fast", "Feature: HomeDepot Search Get It Fast Next days delivery Functionality"</td>
 <td><div><pre>java.lang.AssertionError: expected [[Get It Fast: Next-Day Delivery] but found [Get It Fast: Same-Day Delivery]
 	at org.testng.Assert.fail(Assert.java:110)
@@ -85,9 +151,9 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
 	at stepdefination.NextDayDeliveryDefinations.item_list_should_have_only_delivery_scheduled(NextDayDeliveryDefinations.java:26)
-	at ✽.Item list should have only delivery scheduled(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/NextDayDelivery.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1744423762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1744423762'><pre>java.lang.AssertionError: expected [[Get It Fast: Next-Day Delivery] but found [Get It Fast: Same-Day Delivery]
+	at ✽.Item list should have only delivery scheduled(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/NextDayDelivery.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace547305607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace547305607'><pre>java.lang.AssertionError: expected [[Get It Fast: Next-Day Delivery] but found [Get It Fast: Same-Day Delivery]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -95,9 +161,75 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
 	at stepdefination.NextDayDeliveryDefinations.item_list_should_have_only_delivery_scheduled(NextDayDeliveryDefinations.java:26)
-	at ✽.Item list should have only delivery scheduled(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/NextDayDelivery.feature:7)
+	at ✽.Item list should have only delivery scheduled(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/NextDayDelivery.feature:8)
 </pre></div></td>
-<td>22</td>
+<td>30</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to close the video player by clicking the browser back button", "DIY Projects & Ideas page video can be closed"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-id=&quot;diyProjectsIdeas&quot; class=&quot;ShoppingLinks__link&quot; href=&quot;//www.homedepot.com/c/diy_projects_and_ideas&quot;&gt;...&lt;/a&gt; is not clickable at point (523, 115). Other element would receive the click: &lt;div class=&quot;overlay-close-button overlay-close-button--right&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.125)
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0beac781ecefb192ad282019ac8064a, clickElement {id=95e7dfe8-87d0-48d3-bdf2-43445eb40707}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\davet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e0beac781ecefb192ad282019ac8064a)] -&gt; xpath: /html//div[@id=&apos;header&apos;]//ul[@class=&apos;ShoppingLinks&apos;]//a[@href=&apos;//www.homedepot.com/c/diy_projects_and_ideas&apos;]]
+Session ID: e0beac781ecefb192ad282019ac8064a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at stepdefination.VideoPlaybackCloseDefination.the_video_player_is_playing_a_video_in_the_diy_projects_ideas_page(VideoPlaybackCloseDefination.java:18)
+	at ✽.the video player is playing a video in the DIY Projects &amp; Ideas page(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/VideoPlaybackClose.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace669273756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace669273756'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-id=&quot;diyProjectsIdeas&quot; class=&quot;ShoppingLinks__link&quot; href=&quot;//www.homedepot.com/c/diy_projects_and_ideas&quot;&gt;...&lt;/a&gt; is not clickable at point (523, 115). Other element would receive the click: &lt;div class=&quot;overlay-close-button overlay-close-button--right&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.125)
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0beac781ecefb192ad282019ac8064a, clickElement {id=95e7dfe8-87d0-48d3-bdf2-43445eb40707}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\davet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e0beac781ecefb192ad282019ac8064a)] -&gt; xpath: /html//div[@id=&apos;header&apos;]//ul[@class=&apos;ShoppingLinks&apos;]//a[@href=&apos;//www.homedepot.com/c/diy_projects_and_ideas&apos;]]
+Session ID: e0beac781ecefb192ad282019ac8064a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at stepdefination.VideoPlaybackCloseDefination.the_video_player_is_playing_a_video_in_the_diy_projects_ideas_page(VideoPlaybackCloseDefination.java:18)
+	at ✽.the video player is playing a video in the DIY Projects &amp; Ideas page(file:///C:/Users/davet/eclipse-workspace/thehomedepot/src/test/resources/features/VideoPlaybackClose.feature:3)
+</pre></div></td>
+<td>1</td>
 <td>runners.CucumberRunner@7161d8d1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -109,74 +241,89 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to click and see recent search", "HomeDepot Recent Search Functionality"</td>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to look for deals in the weekly ad.", "Home Depot Local Ad & Catalog Functionality"</td>
 <td></td>
-<td>59</td>
-<td>runners.CucumberRunner@7161d8d1</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with NJ Zipcode", "Home Depot NJ Zipcode Store Locator"</td>
-<td></td>
-<td>14</td>
-<td>runners.CucumberRunner@7161d8d1</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to click Home Depot Logo", "Home Depot Logo Functionality"</td>
-<td></td>
-<td>13</td>
-<td>runners.CucumberRunner@7161d8d1</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will see an input error message when login with invalid email", "SignIn Invalid Email"</td>
-<td></td>
-<td>22</td>
-<td>runners.CucumberRunner@7161d8d1</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to search item", "HomeDepot Search Sink Functionality"</td>
-<td></td>
-<td>34</td>
-<td>runners.CucumberRunner@7161d8d1</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with NY Zipcode", "Home Depot NY Zipcode Store Locator"</td>
-<td></td>
-<td>9</td>
-<td>runners.CucumberRunner@7161d8d1</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to search item", "HomeDepot Search SnowBlower Functionality"</td>
-<td></td>
-<td>25</td>
-<td>runners.CucumberRunner@7161d8d1</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to get item fast", "HomeDepot Search Get It Fast Free 2 days delivery Functionality"</td>
-<td></td>
-<td>24</td>
-<td>runners.CucumberRunner@7161d8d1</td></tr>
-<tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to get item fast", "HomeDepot Search For Store Pick Up Functionality"</td>
-<td></td>
-<td>45</td>
+<td>31</td>
 <td>runners.CucumberRunner@7161d8d1</td></tr>
 <tr>
 <td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with Canada Zipcode", "Home Depot Canada Zipcode Store Locator"</td>
 <td></td>
+<td>26</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with NY Zipcode", "Home Depot NY Zipcode Store Locator"</td>
+<td></td>
+<td>15</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to click Home Depot Logo", "Home Depot Logo Functionality"</td>
+<td></td>
+<td>28</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with NJ Zipcode", "Home Depot NJ Zipcode Store Locator"</td>
+<td></td>
+<td>20</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User will see an input error message when login with invalid email", "SignIn Invalid Email"</td>
+<td></td>
 <td>25</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to get item fast", "HomeDepot Search For Store Pick Up Functionality"</td>
+<td></td>
+<td>29</td>
 <td>runners.CucumberRunner@7161d8d1</td></tr>
 <tr>
 <td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User search for Heaters", "HomeDepot Search Heaters Functionality"</td>
 <td></td>
-<td>39</td>
+<td>17</td>
 <td>runners.CucumberRunner@7161d8d1</td></tr>
 <tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User click zoom out to make the page bigger", "Home Depot Local Ads & Catalog Zoom Out Functionality"</td>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to search item", "HomeDepot Search SnowBlower Functionality"</td>
 <td></td>
-<td>17</td>
+<td>19</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to play the first video", "DIY Projects & Ideas page video is playable"</td>
+<td></td>
+<td>18</td>
 <td>runners.CucumberRunner@7161d8d1</td></tr>
 <tr>
 <td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User click zoom in to make the page bigger", "Home Depot Local Ads & Catalog Zoom In Functionality"</td>
 <td></td>
-<td>12</td>
+<td>31</td>
 <td>runners.CucumberRunner@7161d8d1</td></tr>
 <tr>
-<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to look for deals in the weekly ad.", "Home Depot Local Ad & Catalog Functionality"</td>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to visit the DIY Projects & Ideas page", "DIY Projects & Ideas link is clickable"</td>
 <td></td>
-<td>19</td>
+<td>17</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to get item fast", "HomeDepot Search Get It Fast Free 2 days delivery Functionality"</td>
+<td></td>
+<td>41</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to search item", "HomeDepot Search Sink Functionality"</td>
+<td></td>
+<td>26</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to view the correct url when visit the DIY Projects & Ideas page", "Test the DIY Projects & Ideas page url"</td>
+<td></td>
+<td>32</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User click zoom out to make the page bigger", "Home Depot Local Ads & Catalog Zoom Out Functionality"</td>
+<td></td>
+<td>18</td>
+<td>runners.CucumberRunner@7161d8d1</td></tr>
+<tr>
+<td title='runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to click and see recent search", "HomeDepot Recent Search Functionality"</td>
+<td></td>
+<td>35</td>
 <td>runners.CucumberRunner@7161d8d1</td></tr>
 </table><p>
 </body>

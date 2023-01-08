@@ -14,6 +14,8 @@ public class BrowserHelper {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			driver.manage().window().maximize();
+
 		}
 	}
 

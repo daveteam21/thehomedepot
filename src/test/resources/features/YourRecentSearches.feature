@@ -1,4 +1,5 @@
 Feature: HomeDepot Recent Search Functionality
+@regression
 Scenario: User able to click and see recent search
 Given Open Home Depot Homepage
 When search for Glue Guns

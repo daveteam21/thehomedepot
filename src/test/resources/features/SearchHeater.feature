@@ -1,4 +1,5 @@
 Feature: HomeDepot Search Heaters Functionality
+@regression
 Scenario: User search for Heaters
 Given Open Home Depot Homepage
 When Search for heater

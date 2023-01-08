@@ -10,3 +10,4 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 }
 
 //HomeDepotLogo.feature
+//DIYPageClick.feature 

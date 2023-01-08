@@ -1,4 +1,5 @@
 Feature: Home Depot Logo Functionality
+@regression
 Scenario: User able to click Home Depot Logo
 Given Open Home Depot Homepage
 When Click Home Depot Logo

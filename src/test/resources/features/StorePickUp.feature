@@ -1,5 +1,5 @@
 Feature: HomeDepot Search For Store Pick Up Functionality
-
+@regression
 Scenario: User able to get item fast
 Given Open Home Depot Homepage
 When search for wood

@@ -1,4 +1,5 @@
 Feature: Home Depot NJ Zipcode Store Locator
+@regression
 Scenario: Search with NJ Zipcode
 Given Open Home Depot Homepage
 When click store finder link

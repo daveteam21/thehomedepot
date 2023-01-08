@@ -43,6 +43,18 @@ public class HomePage {
 	public WebElement hdtitle;
 	
 
+	
+
+	@FindBy(xpath = "/html//div[@id='header']//ul[@class='ShoppingLinks']//a[@href='//www.homedepot.com/c/diy_projects_and_ideas']")
+	public WebElement DIYLink;
+	
+	@FindBy(css ="[class='section-heading__text--6fd88 section-heading__text--plain--6fd88']")
+	public WebElement DIYText;
+	
+	
+	
+	
+	
 
 	public HomePage() {
 		driver = BrowserHelper.driver;

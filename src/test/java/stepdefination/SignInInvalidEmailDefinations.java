@@ -18,8 +18,9 @@ public class SignInInvalidEmailDefinations {
 	public void i_navigate_to_the_loginpage() throws InterruptedException {
 		 HomePage homepage = new HomePage();
 		    homepage.myAccount.click();
+		    Thread.sleep(3000);
 		    homepage.signinButton.click();
-		    Thread.sleep(1000);
+		    Thread.sleep(3000);
 	}
 	@When("I enter invalid email address")
 	public void i_enter_invalid_email_address() {
